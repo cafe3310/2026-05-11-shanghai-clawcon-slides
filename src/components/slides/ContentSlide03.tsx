@@ -22,7 +22,7 @@ export default function ContentSlide03() {
 
           <div className="mt-6 text-[24px] text-dark/60 font-mono text-left z-10 pl-2">
             OpenClaw + DeepResearch Sub-agent + Ring-2.6-1T<br/>
-            黄金投资与风险调研报告 <span className="text-dark/40">/ Gold Investment & Risk Analysis Report</span>
+            黄金投资与风险调研报告 <span className="text-dark/40">/ Gold Investment & Risk Analysis</span>
           </div>
 
           {/* Subtle Background Glow for Video */}
@@ -37,7 +37,7 @@ export default function ContentSlide03() {
               在 Claw 中构建可信赖的 Agent
             </h1>
             <h2 className="font-display text-[32px] leading-tight text-dark/60 tracking-tight">
-              Building Trustworthy Agents in Claw
+              Building Trustworthy Agents
             </h2>
           </div>
 
@@ -47,7 +47,7 @@ export default function ContentSlide03() {
               <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">01 / SAFE</div>
               <h3 className="font-display text-4xl text-dark mb-1">Guardrail 必须在模型外头</h3>
               <p className="font-sans text-[28px] font-normal text-dark/60">
-                Guardrails Must Reside Outside the Model
+                Externalize Guardrails
               </p>
             </div>
 
@@ -56,7 +56,7 @@ export default function ContentSlide03() {
               <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">02 / SECURE</div>
               <h3 className="font-display text-4xl text-dark mb-1">严肃任务交给纯净 Subagent</h3>
               <p className="font-sans text-[28px] font-normal text-dark/60">
-                Delegate Critical Tasks to Pure Subagents
+                Pure Subagents for Critical Tasks
               </p>
             </div>
 
@@ -65,7 +65,7 @@ export default function ContentSlide03() {
               <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">03 / TRUSTWORTHY</div>
               <h3 className="font-display text-4xl text-dark mb-1">模型路由与幻觉抑制</h3>
               <p className="font-sans text-[28px] font-normal text-dark/60">
-                Model Routing & Hallucination Suppression
+                Model Routing & Hallucination Control
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function ContentSlide03() {
              <p className="font-sans text-[28px] text-dark/80 font-medium leading-relaxed">
                在不烧出天价 Token 的前题下交付复杂任务（可能也包括辅助投资）。让你有更多时间摸鱼。<br/>
                <span className="text-dark/50 text-[24px] font-normal mt-2 block">
-                 Deliver complex tasks without burning through astronomical Token budgets (and maybe help with serious tasks).
+                 Deliver complex tasks without burning tokens (and maybe help invest). More time to slack off.
                </span>
              </p>
           </div>

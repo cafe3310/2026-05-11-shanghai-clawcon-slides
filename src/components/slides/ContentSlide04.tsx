@@ -64,19 +64,19 @@ export default function ContentSlide04() {
           <div className="flex flex-col gap-8">
             <p className="font-sans text-3xl font-normal text-dark/80 leading-relaxed ">
               基于 Prompt / Skill 的防护不可能一直有效。<br/>
-              <span className="text-dark/50 text-[24px] mt-2 block">Defenses based on prompts or injected skills are fragile.</span>
+              <span className="text-dark/50 text-[24px] mt-2 block">Prompt/skill-based defenses are inherently fragile.</span>
             </p>
 
             <p className="font-sans text-3xl font-normal text-dark/70 leading-relaxed ">
-              它们极易被文件链接等机制绕过。如果你的设备管着钱，最好想想更强的手段：<br/>
-              <span className="text-dark/50 text-[24px] mt-2 block">Easily bypassed by symbollinks and other mechanisms. If your system handles money you need stronger measures.</span>
+              它们极易被代码生成等机制绕过。如果你的设备管着钱，最好想想更强的手段。<br/>
+              <span className="text-dark/50 text-[24px] mt-2 block">Easily bypassed via codegen. If handling money, you need stronger measures:</span>
             </p>
 
             <div className="mt-4 bg-prussian text-white p-10 rounded-none relative overflow-hidden">
                <p className="font-sans text-3xl font-medium leading-relaxed tracking-wide">
                  安全护栏必须硬编码在模型之外（外部 Harness / Filesystem / 虚拟化隔离）。<br/>
                  <span className="text-white/70 text-[24px] font-normal mt-4 block">
-                   Security guardrails must be hardcoded OUTSIDE the model (External Harness / Filesystem / Virtualized Isolation).
+                   Hardcode guardrails OUTSIDE the model (External Harness / FS / VM Isolation).
                  </span>
                </p>
             </div>

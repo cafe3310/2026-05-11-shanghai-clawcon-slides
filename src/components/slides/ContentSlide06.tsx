@@ -86,7 +86,7 @@ export default function ContentSlide06() {
               路由模型，控制幻觉，省钱
             </h1>
             <h2 className="font-display text-[32px] leading-tight text-dark/60 tracking-tight">
-              Model Routing: Control Hallucinations, Save Money
+              Model Routing: Less Hallucination, Lower Cost
             </h2>
           </div>
 
@@ -97,9 +97,9 @@ export default function ContentSlide06() {
                 <strong className="block text-dark font-medium tracking-wide mb-2 text-4xl font-display">
                   「干活」任务的指数级用量
                 </strong>
-                <span className="block text-dark/60 text-[28px] mb-3 leading-snug">"Work" Tasks Consume Exponential Tokens</span>
+                <span className="block text-dark/60 text-[28px] mb-3 leading-snug">"Work" Tasks Burn Tokens</span>
                 复杂的报告任务容易产生指数用量而烧出天价。根据任务特性动态分配模型，是生产环境省钱的关键。<br/>
-                <span className="text-dark/50 text-[24px] mt-2 block">Complex reporting tasks easily rack up astronomical API bills. Dynamically routing models based on task characteristics is key to saving money in production.</span>
+                <span className="text-dark/50 text-[24px] mt-2 block">Complex tasks rack up API bills. Dynamic routing is key to saving money.</span>
               </div>
             </div>
 
@@ -109,9 +109,9 @@ export default function ContentSlide06() {
                 <strong className="block text-dark font-medium tracking-wide mb-2 text-4xl font-display">
                   「聊天」与「工作」的不同需求
                 </strong>
-                <span className="block text-dark/60 text-[28px] mb-3 leading-snug">Different Needs for "Chat" vs. "Work"</span>
+                <span className="block text-dark/60 text-[28px] mb-3 leading-snug">"Chat" vs. "Work" Needs</span>
                 闲聊模型需要情绪价值给够；涉及重要决策、大量上下文消耗的工作，最好切换至低成本低幻觉模型。<br/>
-                <span className="text-dark/50 text-[24px] mt-2 block">Chat models need to provide emotional value; for critical decisions or high-context work, switch to low-cost, low-hallucination models.</span>
+                <span className="text-dark/50 text-[24px] mt-2 block">Chat needs EQ; critical/high-context work needs low-cost, low-hallucination models.</span>
               </div>
             </div>
           </div>
