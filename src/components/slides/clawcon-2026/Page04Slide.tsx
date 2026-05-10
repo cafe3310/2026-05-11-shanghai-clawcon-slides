@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideWrapper from '../SlideWrapper';
+import SlideWrapper from '../../SlideWrapper';
 import { MessageSquare, Files, Wrench, Workflow, Database, Globe } from 'lucide-react';
 
 const AsteriskIcon: React.FC<{ width?: number | string, height?: number | string, className?: string }> = ({ width = 48, height = 48, className = "" }) => (

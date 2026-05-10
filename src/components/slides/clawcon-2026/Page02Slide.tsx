@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideWrapper from '../SlideWrapper';
+import SlideWrapper from '../../SlideWrapper';
 
 export default function Page02Slide() {
   return (

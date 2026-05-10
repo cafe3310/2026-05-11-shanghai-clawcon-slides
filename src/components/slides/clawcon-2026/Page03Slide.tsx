@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideWrapper from '../SlideWrapper';
+import SlideWrapper from '../../SlideWrapper';
 import { Clock, Cpu, Wrench, Terminal, ArrowRight, ArrowLeft, Database, Workflow } from 'lucide-react';
 
 export default function Page03Slide() {

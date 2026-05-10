@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideWrapper from '../SlideWrapper';
+import SlideWrapper from '../../SlideWrapper';
 import { Database, BookOpen, Zap, TrendingUp } from 'lucide-react';
 
 export default function Page07Slide() {

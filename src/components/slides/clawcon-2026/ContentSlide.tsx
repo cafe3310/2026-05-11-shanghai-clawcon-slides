@@ -1,5 +1,5 @@
 import React from 'react';
-import SlideWrapper from '../SlideWrapper';
+import SlideWrapper from '../../SlideWrapper';
 import { MessageSquare, Settings, Layers, TrendingUp } from 'lucide-react';
 
 export default function ContentSlide() {

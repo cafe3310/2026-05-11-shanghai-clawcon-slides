@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import SlideWrapper from '../SlideWrapper';
-import { SlideContext } from '../../App';
+import SlideWrapper from '../../SlideWrapper';
+import { SlideContext } from '../../../App';
 import { Download, CheckCircle2, Loader2 } from 'lucide-react';
 
 export default function ClosingSlide() {
