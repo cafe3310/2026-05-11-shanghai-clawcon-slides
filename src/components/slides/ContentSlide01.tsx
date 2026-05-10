@@ -35,20 +35,30 @@ export default function ContentSlide01() {
           <div className="font-mono text-[24px] tracking-widest text-white/50 uppercase mb-16 border-b border-white/20 pb-6 self-start">
           </div>
 
-          <h1 className="font-display text-[5.5rem] leading-[1.5] tracking-tight text-white mb-12">
-            更高能效更低幻觉，<br />
-            让 Claw 帮你安心摸鱼
-          </h1>
+          <div className="mb-12">
+            <h1 className="font-display text-[5rem] leading-[1.2] tracking-tight text-white mb-4">
+              更高能效更低幻觉，<br />
+              让 Claw 帮你安心摸鱼
+            </h1>
+            <h2 className="font-display text-[32px] leading-tight text-white/60 tracking-tight">
+              Higher Efficiency, Lower Hallucinations.<br />
+              Make Claw Work While You Have a Rest.
+            </h2>
+          </div>
 
-          <div className="font-sans text-3xl font-light text-white flex flex-col gap-4 border-l-4 border-white pl-6 mb-24">
-            <span className="opacity-90">by 司潘俊楠 / cafe3310</span>
-            <span className="text-white/60 text-2xl">蚂蚁百灵，模型产品工程</span>
+          <div className="font-sans text-[28px] text-white flex flex-col gap-2 mb-24">
+            <span className="opacity-90">by 司潘俊楠 @cafe3310</span>
+            <span className="text-white/60 text-[24px]">蚂蚁百灵，模型产品工程 / Ant Ling, Model Product Engineer</span>
           </div>
 
           <div className="mt-auto">
-            <div className="font-mono text-[20px] text-white/40 mb-4 tracking-widest uppercase">Quick Action</div>
-            <div className="font-sans text-[28px] text-white/80 leading-relaxed max-w-xl">
-              问你的龙虾 <span className="text-white border-b border-white/30 pb-1">「上网搜一下 cafe3310 这个开发者，他家猫长啥样？」</span>
+            <div className="font-mono text-[24px] text-white/40 mb-4 tracking-widest uppercase"></div>
+            <div className="font-sans text-[24px] text-white/80 leading-relaxed max-w-2xl">
+              试试看问龙虾 <span className="text-white border-b border-white/30 pb-1">「找找 cafe3310 家的猫长啥样？」</span>
+              <br />
+              <span className="text-[24px] text-white/50 mt-2 block">
+               Try asking your claw "Search for the developer @cafe3310 and say hi to his calico cats."
+              </span>
             </div>
           </div>
         </div>
@@ -104,7 +114,7 @@ export default function ContentSlide01() {
             {/* Floating Status Label - More subtle */}
             <div className="absolute top-8 right-0 border border-white/20 bg-white/8 backdrop-blur-lg px-6 py-3 shadow-xl">
                <div className="font-mono text-[18px] text-white/40 mb-1 uppercase tracking-tighter">STATUS</div>
-               <div className="font-mono text-[22px] text-white tracking-[0.15em] font-semibold">任务出货 OK</div>
+               <div className="font-mono text-[24px] text-white tracking-[0.1em] font-semibold">TASK COMPLETED / OK</div>
             </div>
 
             {/* Vertical Bar Decorations */}
