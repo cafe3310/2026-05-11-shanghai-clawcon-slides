@@ -4,12 +4,9 @@ import SlideWrapper from '../SlideWrapper';
 export default function ContentSlide02() {
   return (
     <SlideWrapper>
-      <div className="w-full h-full pt-20 px-16 pb-16 flex flex-col relative z-0">
+      <div className="w-full h-full pt-16 px-24 pb-12 flex flex-col relative z-0">
         {/* Header Section */}
-        <div className="mb-12 max-w-6xl pl-4">
-          <div className="font-mono text-[24px] tracking-widest text-prussian uppercase mb-4 font-semibold">
-            CAPABILITY MATRIX
-          </div>
+        <div className="mb-8 w-full pl-4">
           <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-6">
             让 Claw 帮我推荐投资，要怎么做才靠谱？
           </h1>
@@ -19,10 +16,10 @@ export default function ContentSlide02() {
         </div>
 
         {/* Matrix Area */}
-        <div className="flex-1 relative flex flex-col">
+        <div className="flex-1 relative flex flex-col ml-12 mb-8">
           
           {/* Y Axis Label */}
-          <div className="absolute -left-12 top-1/2 -translate-y-1/2 -rotate-90 text-[24px] font-sans tracking-widest text-dark/40 whitespace-nowrap flex items-center gap-4 z-10">
+          <div className="absolute top-1/2 left-0 -translate-x-[5rem] -translate-y-1/2 -rotate-90 text-[24px] font-sans tracking-widest text-dark/40 whitespace-nowrap flex items-center gap-4 z-10 origin-center">
             <span>低</span>
             <div className="w-24 h-[1px] bg-prussian/20"></div>
             <span className="font-medium text-prussian/60">容错率与可人工校正度</span>
@@ -37,7 +34,7 @@ export default function ContentSlide02() {
             <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-prussian/20 pointer-events-none"></div>
             
             {/* Top Left: 绝对好球区 */}
-            <div className="border-b border-prussian/20 p-12 lg:p-14 flex flex-col justify-center">
+            <div className="border-b border-prussian/20 p-8 flex flex-col justify-center">
               <div className="font-mono text-[24px] text-prussian/40 tracking-widest uppercase mb-4 select-none">Q1 / 绝对好球区</div>
               <h3 className="font-display text-4xl text-dark mb-4">编程代码生成、<br/>会议纪要、周报月报、方案初稿</h3>
               <p className="font-sans text-[24px] font-light text-dark/70 leading-relaxed pr-8">
@@ -46,7 +43,7 @@ export default function ContentSlide02() {
             </div>
 
             {/* Top Right: 被低估的潜力区 */}
-            <div className="bg-gray-light/50 border-b border-prussian/20 p-12 lg:p-14 flex flex-col justify-center relative">
+            <div className="bg-gray-light/50 border-b border-prussian/20 p-8 flex flex-col justify-center relative">
               <div className="absolute top-0 right-0 p-8">
                 <div className="w-3 h-3 bg-prussian/40"></div>
               </div>
@@ -64,7 +61,7 @@ export default function ContentSlide02() {
             </div>
 
             {/* Bottom Left: 高危结构化任务 */}
-            <div className="p-12 lg:p-14 flex flex-col justify-center">
+            <div className="p-8 flex flex-col justify-center">
               <div className="font-mono text-[24px] text-prussian/40 tracking-widest uppercase mb-4 select-none">Q3 / 高危结构化任务</div>
               <h3 className="font-display text-4xl text-dark mb-4">财务报表精准核算、<br/>法律合同关键条款定稿</h3>
               <p className="font-sans text-[24px] font-light text-dark/70 leading-relaxed pr-8">
@@ -73,7 +70,7 @@ export default function ContentSlide02() {
             </div>
 
             {/* Bottom Right: 不适合直接交接 */}
-            <div className="bg-prussian text-white p-12 lg:p-14 flex flex-col justify-center shadow-[inset_0_20px_40px_rgba(0,0,0,0.2)]">
+            <div className="bg-prussian text-white p-8 flex flex-col justify-center shadow-[inset_0_20px_40px_rgba(0,0,0,0.2)]">
               <div className="font-mono text-[24px] text-white/50 tracking-widest uppercase mb-4 select-none">Q4 / 不适合直接交接</div>
               <h3 className="font-display text-4xl text-white mb-4">心理治疗情绪干预、投资<br/>与股市分析、纯主观价值判断</h3>
               <p className="font-sans text-[24px] font-light text-white/80 leading-relaxed pr-8 mb-6">
@@ -89,7 +86,7 @@ export default function ContentSlide02() {
           </div>
 
           {/* X Axis Label */}
-          <div className="absolute -bottom-8 left-0 right-0 flex items-center justify-center text-[24px] font-sans tracking-widest text-dark/40 z-10 w-full pl-6 pr-6">
+          <div className="absolute -bottom-8 left-0 right-0 flex items-center justify-center text-[24px] font-sans tracking-widest text-dark/40 z-10 w-full px-6">
             <span>容易补齐</span>
             <div className="flex-1 h-[1px] bg-prussian/20 mx-4 max-w-xs"></div>
             <span className="font-medium text-prussian/60">上下文完备度与结构清晰度</span>
