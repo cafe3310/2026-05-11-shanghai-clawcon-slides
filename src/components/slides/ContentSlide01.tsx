@@ -4,7 +4,7 @@ import clawImage from '../../assets/images/claw.png';
 
 export default function ContentSlide01() {
   return (
-    <SlideWrapper>
+    <SlideWrapper footerTheme="light">
       <div className="w-full h-full flex relative z-0 bg-prussian overflow-hidden">
         {/* Background grid with dots increasing in size and brightness from left to right - Toned down */}
         <div className="absolute inset-0 pointer-events-none">

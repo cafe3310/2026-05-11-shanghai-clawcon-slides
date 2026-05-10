@@ -4,12 +4,13 @@ import { SlideContext } from '../App';
 interface SlideWrapperProps {
   children: React.ReactNode;
   backgroundColor?: string;
+  footerTheme?: 'light' | 'dark';
 }
 
-export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }: SlideWrapperProps) {
+export default function SlideWrapper({ children, backgroundColor = 'bg-paper', footerTheme = 'dark' }: SlideWrapperProps) {
   const outerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
-  const { currentIndex, totalSlides } = useContext(SlideContext);
+  const { currentIndex, totalSlides, elapsedSeconds, isRunning, toggleTimer } = useContext(SlideContext);
 
   useEffect(() => {
     const updateScale = () => {
@@ -44,6 +45,15 @@ export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }:
   }, []);
 
   const pageNumber = `${String(currentIndex + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+  
+  const formatTime = (totalSeconds: number) => {
+    const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+    const s = (totalSeconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+  };
+
+  const footerColor = footerTheme === 'light' ? 'text-white/40' : 'text-dark/30';
+  const footerHoverColor = footerTheme === 'light' ? 'hover:text-white/80' : 'hover:text-dark/60';
 
   return (
     <div ref={outerRef} className="w-full h-full flex items-center justify-center overflow-hidden">
@@ -58,9 +68,21 @@ export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }:
       >
         {children}
         
-        {/* Page Number */}
-        <div className="absolute bottom-8 right-12 font-mono text-[24px] tracking-widest text-dark/30 z-50">
-          {pageNumber}
+        {/* Timer & Page Number */}
+        <div className={`absolute bottom-8 right-12 flex flex-col items-end gap-1 font-mono tracking-widest ${footerColor} z-50 select-none`}>
+          <div className="flex items-center gap-2 text-[20px]">
+            <span>{formatTime(elapsedSeconds)}</span>
+            <button 
+              onClick={toggleTimer}
+              className={`${footerHoverColor} transition-colors w-6 flex justify-center items-center pointer-events-auto cursor-pointer`}
+              title={isRunning ? "Pause timer" : "Resume timer"}
+            >
+              {isRunning ? 'x' : '>'}
+            </button>
+          </div>
+          <div className="text-[24px]">
+            {pageNumber}
+          </div>
         </div>
       </div>
     </div>

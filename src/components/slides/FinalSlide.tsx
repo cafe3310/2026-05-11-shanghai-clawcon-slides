@@ -13,7 +13,7 @@ export default function FinalSlide() {
            <div className="mb-24">
               <h1 className="font-display text-[5.5rem] leading-[1.1] tracking-tight text-dark">
                 OpenClaw 提供了不错的基座，<br/>
-                <span className="text-prussian">有诉求不妨自己写写看。</span>
+                <span className="text-prussian">有诉求不妨二次开发，试试前面的经验</span>
               </h1>
            </div>
 
@@ -40,13 +40,13 @@ export default function FinalSlide() {
                 </div>
                 <div className="flex flex-col gap-12 mt-auto">
                   <div>
-                    <div className="font-sans text-[24px] text-dark/60 mb-2">了解更多与加入社群</div>
+                    <div className="font-sans text-[24px] text-dark/60 mb-2">了解更多与社群 (X, WeChat, Discord)</div>
                     <div className="font-mono text-[32px] text-prussian font-bold underline underline-offset-8 decoration-prussian/30">
                       ant-ling.com
                     </div>
                   </div>
                   <div>
-                    <div className="font-sans text-[24px] text-dark/60 mb-2">或者线下找我们交流</div>
+                    <div className="font-sans text-[24px] text-dark/60 mb-2">或者线上找我闲聊</div>
                     <div className="font-mono text-[32px] text-dark font-bold">
                       @cafe3310
                     </div>

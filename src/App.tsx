@@ -6,15 +6,6 @@ import ContentSlide04 from './components/slides/ContentSlide04';
 import ContentSlide05 from './components/slides/ContentSlide05';
 import ContentSlide06 from './components/slides/ContentSlide06';
 import FinalSlide from './components/slides/FinalSlide';
-import MainTitleSlide from './components/slides/MainTitleSlide';
-import TwoDemosSlide from './components/slides/TwoDemosSlide';
-import GlassPanelSlide from './components/slides/GlassPanelSlide';
-import FourQuadrantsSlide from './components/slides/FourQuadrantsSlide';
-import DiagramSlide from './components/slides/DiagramSlide';
-import DesignGuideSlide from './components/slides/DesignGuideSlide';
-import LayoutGuideSlide from './components/slides/LayoutGuideSlide';
-import TokenGuideSlide from './components/slides/TokenGuideSlide';
-import SurfaceGuideSlide from './components/slides/SurfaceGuideSlide';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
@@ -24,25 +15,33 @@ const slides = [
   <ContentSlide04 key="content-04" />,
   <ContentSlide05 key="content-05" />,
   <ContentSlide06 key="content-06" />,
-  <FinalSlide key="final-slide" />,
-  <MainTitleSlide key="main-title" />,
-  <DesignGuideSlide key="design" />,
-  <TokenGuideSlide key="tokens" />,
-  <SurfaceGuideSlide key="surfaces" />,
-  <TwoDemosSlide key="two-demos" />,
-  <DiagramSlide key="diagram" />,
-  <GlassPanelSlide key="glass-panel" />,
-  <FourQuadrantsSlide key="four-quadrants" />,
-  <LayoutGuideSlide key="layout" />
+  <FinalSlide key="final-slide" />
 ];
 
 export const SlideContext = React.createContext({
   currentIndex: 0,
   totalSlides: 0,
+  elapsedSeconds: 0,
+  isRunning: true,
+  toggleTimer: () => {},
 });
 
 export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [isRunning, setIsRunning] = useState(true);
+
+  useEffect(() => {
+    let interval: number;
+    if (isRunning) {
+      interval = window.setInterval(() => {
+        setElapsedSeconds((prev) => prev + 1);
+      }, 1000);
+    }
+    return () => clearInterval(interval);
+  }, [isRunning]);
+
+  const toggleTimer = useCallback(() => setIsRunning((prev) => !prev), []);
 
   const goToNext = useCallback(() => {
     setCurrentIndex((prev) => (prev < slides.length - 1 ? prev + 1 : prev));
@@ -66,7 +65,7 @@ export default function App() {
   }, [goToNext, goToPrev]);
 
   return (
-    <SlideContext.Provider value={{ currentIndex, totalSlides: slides.length }}>
+    <SlideContext.Provider value={{ currentIndex, totalSlides: slides.length, elapsedSeconds, isRunning, toggleTimer }}>
       <div className="relative w-full h-[100dvh] bg-dark overflow-hidden">
         {/* Current Slide */}
         <div className="absolute inset-0 transition-opacity duration-300">
