@@ -96,7 +96,7 @@ export default function ContentSlide06() {
                 <strong className="block text-dark font-medium tracking-wide mb-3 text-4xl font-display">
                   「干活」任务的指数级用量
                 </strong>
-                不同任务选择不同的模型，是一个常被忽略的优化点，但在生产环境中能显著省钱。如果全程使用高性能模型，复杂任务极易耗尽额度。
+                复杂的报告任务容易产生指数用量而烧出天价。根据任务特性动态分配模型，是生产环境省钱的关键。
               </div>
             </div>
 
@@ -104,19 +104,9 @@ export default function ContentSlide06() {
               <span className="text-prussian mr-4 mt-2 font-mono text-3xl opacity-80">✦</span>
               <div className="text-dark/80 leading-relaxed text-3xl font-normal">
                 <strong className="block text-dark font-medium tracking-wide mb-3 text-4xl font-display">
-                  警惕「谄媚」引发的误差
+                  「聊天」与「工作」的不同需求
                 </strong>
-                高幻觉的强大对话模型有时为了迎合用户预期，会过度揣测动机，给出看似贴心但错误的建议。
-              </div>
-            </div>
-
-            <div className="flex items-start">
-              <span className="text-prussian mr-4 mt-2 font-mono text-3xl opacity-80">✦</span>
-              <div className="text-dark/80 leading-relaxed text-3xl font-normal">
-                <strong className="block text-dark font-medium tracking-wide mb-3 text-4xl font-display">
-                  把好钢用在「展示」上
-                </strong>
-                让昂贵的「御三家」专门负责前台聊天，提供情绪价值；遇到无需创意、强调规则执行的苦力活，坚决切换至低成本低幻觉的专门模型。
+                闲聊模型需要情绪价值给够；涉及重要决策、大量上下文消耗的工作，最好切换至低成本低幻觉模型。
               </div>
             </div>
           </div>
