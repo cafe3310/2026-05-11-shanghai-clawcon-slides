@@ -41,23 +41,23 @@ export default function ContentSlide01() {
               让 Claw 帮你安心摸鱼
             </h1>
             <h2 className="font-display text-[32px] leading-tight text-white/60 tracking-tight">
-              Higher Efficiency, Lower Hallucinations.<br />
-              Make Claw Work While You Have a Rest.
+              High Efficiency, Low Hallucination.<br />
+              Let Claw Work While You Slack.
             </h2>
           </div>
 
-          <div className="font-sans text-[28px] text-white flex flex-col gap-2 mb-24">
-            <span className="opacity-90">by 司潘俊楠 @cafe3310</span>
-            <span className="text-white/60 text-[24px]">蚂蚁百灵，模型产品工程 / Ant Ling, Model Product Engineer</span>
+          <div className="font-sans text-[28px] font-light text-white flex flex-col gap-2 border-l-4 border-white pl-6 mb-24">
+            <span className="opacity-90">by 司潘俊楠 / cafe3310</span>
+            <span className="text-white/60 text-[24px]">蚂蚁百灵，模型产品工程 / Bailing, Model Product Eng.</span>
           </div>
 
           <div className="mt-auto">
-            <div className="font-mono text-[24px] text-white/40 mb-4 tracking-widest uppercase"></div>
-            <div className="font-sans text-[24px] text-white/80 leading-relaxed max-w-2xl">
-              试试看问龙虾 <span className="text-white border-b border-white/30 pb-1">「找找 cafe3310 家的猫长啥样？」</span>
+            <div className="font-mono text-[24px] text-white/40 mb-4 tracking-widest uppercase">Quick Action / 快捷指令</div>
+            <div className="font-sans text-[28px] text-white/80 leading-relaxed max-w-2xl">
+              问你的龙虾 <span className="text-white border-b border-white/30 pb-1">「上网搜一下 cafe3310 这个开发者，他家猫长啥样？」</span>
               <br />
               <span className="text-[24px] text-white/50 mt-2 block">
-               Try asking your claw "Search for the developer @cafe3310 and say hi to his calico cats."
+                Ask Lobster: "Search for dev cafe3310. What does his cat look like?"
               </span>
             </div>
           </div>
