@@ -18,7 +18,15 @@ import LayoutDesignSlide from './components/slides/clawcon-2026/LayoutDesignSlid
 import ClosingSlide from './components/slides/clawcon-2026/ClosingSlide';
 
 // OpenClaw 2026 Slides
-import OpenClawTitle from './components/slides/2026-openclaw/TitleSlide';
+import ImageSlide from './components/slides/2026-openclaw/ImageSlide';
+
+// Import images for OpenClaw
+import img01 from './assets/slides/2026-openclaw/01.png';
+import img02 from './assets/slides/2026-openclaw/02.png';
+import img03 from './assets/slides/2026-openclaw/03.png';
+import img04 from './assets/slides/2026-openclaw/04.png';
+import img05 from './assets/slides/2026-openclaw/05.png';
+import img06 from './assets/slides/2026-openclaw/06.png';
 
 export const SlideContext = createContext({
   currentIndex: 0,
@@ -31,8 +39,12 @@ const slideSets = {
     title: 'ClawCon Shanghai',
     description: '让 Claw 帮你安心摸鱼',
     slides: [
-      <OpenClawTitle key="openclaw-title" />,
-      <div key="placeholder" className="w-full h-full flex items-center justify-center bg-slate-dark text-white text-4xl">More slides coming soon...</div>
+      <ImageSlide key="img01" imageSrc={img01} />,
+      <ImageSlide key="img02" imageSrc={img02} />,
+      <ImageSlide key="img03" imageSrc={img03} />,
+      <ImageSlide key="img04" imageSrc={img04} />,
+      <ImageSlide key="img05" imageSrc={img05} />,
+      <ImageSlide key="img06" imageSrc={img06} />,
     ]
   },
   'clawcon-2026': {
