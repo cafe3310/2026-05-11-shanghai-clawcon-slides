@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-11T00:00:00Z",
+  "title": "Design System: Shanghai ClawCon 2026",
+  "extensions": {
+    "colorMeta": {
+      "prussian": { "role": "primary", "displayName": "Prussian Blue", "canonical": "#0B25B3" },
+      "paper": { "role": "neutral", "displayName": "Technical Paper", "canonical": "#F3F3EF" },
+      "midnight": { "role": "neutral", "displayName": "Midnight", "canonical": "#111111" },
+      "structural-gray": { "role": "neutral", "displayName": "Structural Gray", "canonical": "#E0E0DB" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Slide titles and major thematic numbers." },
+      "body": { "displayName": "Body", "purpose": "Explanatory text and prose." },
+      "label": { "displayName": "Label", "purpose": "Terminal output, metadata, and structural annotations." }
+    },
+    "shadows": [
+      { "name": "ambient-low", "value": "0 20px 40px rgba(0,0,0,0.2)", "purpose": "Lifting high-contrast elements." }
+    ]
+  },
+  "components": [
+    {
+      "name": "Solid Panel",
+      "kind": "card",
+      "refersTo": "solid-panel",
+      "description": "Grounded content blocks and structural content zones.",
+      "html": "<div class=\"ds-solid-panel\">Content Zone</div>",
+      "css": ".ds-solid-panel { background: #F3F3EF; color: #111111; padding: 32px; border: 1px solid rgba(17, 17, 17, 0.1); border-radius: 0; }"
+    },
+    {
+      "name": "Glass Panel",
+      "kind": "card",
+      "refersTo": "glass-panel",
+      "description": "Floating metadata cards over dark or textured backgrounds.",
+      "html": "<div class=\"ds-glass-panel\">Floating Metadata</div>",
+      "css": ".ds-glass-panel { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); color: #ffffff; padding: 32px; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.2); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Rational Design",
+    "overview": "This system represents a technical, editorial, and highly structured presentation aesthetic. It leans into architectural precision, combining Swiss-style typography with code-centric monospace elements. The layout relies heavily on strict grid systems, wireframe-like borders, and purposeful whitespace to convey engineering rigor. It explicitly rejects SaaS marketing tropes, soft gradients, and generic decorative illustrations.",
+    "keyCharacteristics": [
+      "High-contrast, restricted color palette.",
+      "Extreme typographic hierarchy (massive display text vs. strictly 24px mono annotations).",
+      "Structural linework over filled backgrounds.",
+      "Minimalist terminal and interface abstractions."
+    ],
+    "rules": [
+      { "name": "The Restraint Rule", "body": "The palette is limited to these four colors. Gradients are only used as subtle radial dot-patterns for background texture, never as color transitions on UI elements.", "section": "colors" },
+      { "name": "The 24px Minimum Rule", "body": "No text on any slide may be smaller than 24px. Hierarchy must be established through scale (going larger) and font-weight, never by shrinking text below the baseline.", "section": "typography" },
+      { "name": "The Structural Line Rule", "body": "Depth is secondary to structure. Use 1px borders of prussian/20 or dark/10 to delineate zones before resorting to shadows.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use strict grid alignments and visible 1px borders to separate content areas.",
+      "Do uppercase monospace fonts for small labels, eyebrows, and metadata to give a technical feel.",
+      "Do ensure all body text is at least 24px."
+    ],
+    "donts": [
+      "Don't use SaaS landing-page clichés like neon gradients, bubbly 3D icons, or soft pastel illustrations.",
+      "Don't mix multiple vibrant accent colors; stick to Prussian Blue as the sole highlight.",
+      "Don't use border radii on structural layout elements; save them for specific floating panels or UI abstractions (like the terminal)."
+    ]
+  }
+}

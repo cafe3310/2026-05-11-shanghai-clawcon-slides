@@ -67,7 +67,7 @@ export default function ContentSlide04() {
               基于提示词的防御（如<span className="font-mono bg-dark/5 px-2 py-0.5 rounded text-dark/80 mx-1">不要写 X</span>）极易被文件链接等机制绕过。在涉及资金或核心业务的任务面前，这种防御形同虚设。
             </p>
 
-            <div className="mt-8 bg-dark text-white p-8 rounded-xl relative overflow-hidden shadow-2xl">
+            <div className="mt-8 bg-dark text-white p-8 rounded-xl relative overflow-hidden">
                <p className="font-sans text-[24px] font-medium leading-relaxed tracking-wide">
                  Security 逻辑必须硬编码在模型之外（代码层 / 网关层隔离）。
                </p>
