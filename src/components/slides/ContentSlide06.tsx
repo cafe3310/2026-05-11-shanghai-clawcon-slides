@@ -8,28 +8,28 @@ export default function ContentSlide06() {
       <div className="w-full h-full pt-20 px-24 pb-16 flex relative z-0">
 
         {/* Left Column: Routing Diagram */}
-        <div className="w-1/2 h-full flex flex-col justify-center pr-16 relative z-10">
-          <div className="flex flex-row items-center w-full max-w-2xl mx-auto h-full">
+        <div className="w-1/2 h-full flex flex-col justify-center relative z-10">
+          <div className="flex flex-row items-center w-full max-w-3xl">
             {/* Left Node */}
-            <div className="bg-paper border rounded-full w-32 h-32 flex flex-col items-center justify-center relative z-10 border-dark/15 shrink-0 shadow-sm">
+            <div className="bg-paper border rounded-full w-48 h-32 flex flex-col items-center justify-center relative z-10 border-dark/15 shrink-0 shadow-sm">
               <MessageSquare className="w-8 h-8 text-dark mb-1 opacity-70" strokeWidth={1.5} />
               <span className="font-mono text-dark font-medium tracking-wide text-[24px] uppercase mt-1">User Input</span>
             </div>
 
             {/* Branching Lines */}
-            <div className="w-20 h-56 relative shrink-0">
+            <div className="w-20 h-[480px] relative shrink-0">
                 <div className="absolute top-1/2 left-0 w-8 h-[2px] bg-dark/20 -translate-y-1/2"></div>
-                <div className="absolute top-4 bottom-4 left-8 w-[2px] bg-dark/20"></div>
+                <div className="absolute top-[25%] bottom-[25%] left-8 w-[2px] bg-dark/20"></div>
 
-                <div className="absolute top-4 left-8 right-0 h-[2px] bg-dark/20"></div>
-                <ArrowRight className="absolute top-4 right-0 -translate-y-1/2 text-dark/30 w-5 h-5 translate-x-1/2 bg-transparent"/>
+                <div className="absolute top-[25%] left-8 right-0 h-[2px] bg-dark/20 -translate-y-1/2"></div>
+                <ArrowRight className="absolute top-[25%] right-0 -translate-y-1/2 text-dark/30 w-5 h-5 translate-x-1/2 bg-transparent"/>
 
-                <div className="absolute bottom-4 left-8 right-0 h-[2px] bg-dark/20"></div>
-                <ArrowRight className="absolute bottom-4 right-0 -translate-y-1/2 text-dark/30 w-5 h-5 translate-x-1/2 bg-transparent"/>
+                <div className="absolute top-[75%] left-8 right-0 h-[2px] bg-dark/20 -translate-y-1/2"></div>
+                <ArrowRight className="absolute top-[75%] right-0 -translate-y-1/2 text-dark/30 w-5 h-5 translate-x-1/2 bg-transparent"/>
             </div>
 
             {/* Right Nodes */}
-            <div className="flex flex-col justify-between h-56 w-full ml-6">
+            <div className="flex flex-col justify-around h-[480px] w-full ml-6">
               {/* Top Node */}
               <div className="bg-paper rounded-none border border-dark/10 shadow-sm p-5 w-full relative">
                 <div className="absolute left-0 top-0 bottom-0 w-1 bg-dark"></div>
@@ -47,9 +47,8 @@ export default function ContentSlide06() {
 
                   <div className="flex flex-wrap gap-2 text-[24px]">
                     <span className="px-2 py-1 bg-dark/5 text-dark/80 rounded-none border border-dark/10">高同理心</span>
-                    <span className="px-2 py-1 bg-prussian/10 text-prussian rounded-none border border-prussian/20">谄媚 / 高幻觉</span>
-                  </div>
-                </div>
+                    <span className="px-2 py-1 bg-dark/5 text-dark/80 rounded-none border border-dark/10">上下文复杂、感性诉求</span>
+                  </div>                </div>
               </div>
 
               {/* Bottom Node */}
@@ -65,8 +64,7 @@ export default function ContentSlide06() {
                     </div>
                   </div>
                   <div className="font-display text-[24px] text-dark mb-1">后台数据干活</div>
-                  <div className="text-[24px] font-medium text-dark/50 mb-4 font-mono">ring-1t (等低成本模型)</div>
-
+                  <div className="text-[24px] font-medium text-dark/50 mb-4 font-mono">DeepSeek, GLM, Ring, etc</div>
                   <div className="flex flex-wrap gap-2 text-[24px]">
                     <span className="px-2 py-1 bg-dark/5 text-dark/80 rounded-none border border-dark/10">Dry Logic</span>
                     <span className="px-2 py-1 bg-prussian/10 text-prussian rounded-none border border-prussian/20">务实 / 低幻觉</span>
