@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "SF Pro", "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-paper: #F3F3EF;
+  --color-prussian: #0B25B3;
+  --color-dark: #111111;
+  --color-gray-light: #E0E0DB;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-dark);
+  font-family: var(--font-sans);
+  overflow: hidden; /* Prevent scrolling for slide player */
+}
