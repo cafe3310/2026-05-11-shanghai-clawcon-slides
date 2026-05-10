@@ -49,11 +49,11 @@ export default function MainTitleSlide() {
             
             {/* Floating Data Blocks */}
             <div className="absolute top-1/4 left-0 bg-white/10 backdrop-blur-md border border-white/20 p-6 shadow-xl">
-               <div className="font-mono text-xl text-white/50 mb-2">PROCESS_ID</div>
+               <div className="font-mono text-[24px] text-white/50 mb-2">PROCESS_ID</div>
                <div className="font-mono text-2xl text-white">0xCAFEBABE</div>
             </div>
             <div className="absolute bottom-1/4 right-0 bg-white/10 backdrop-blur-md border border-white/20 p-6 shadow-xl">
-               <div className="font-mono text-xl text-white/50 mb-2">TARGET_MODEL</div>
+               <div className="font-mono text-[24px] text-white/50 mb-2">TARGET_MODEL</div>
                <div className="font-mono text-2xl text-white">NOKIA_3310</div>
             </div>
           </div>

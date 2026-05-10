@@ -24,12 +24,12 @@ export default function DiagramSlide() {
              <div className="flex-1 flex items-center justify-center w-full">
                {/* Messy unstructured nodes */}
                <div className="relative w-full min-h-[250px] border-2 border-dashed border-dark/10 p-8 flex-shrink-0">
-                 <div className="absolute top-8 left-8 w-32 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-xl">PROMPT</div>
+                 <div className="absolute top-8 left-8 w-32 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-[24px]">PROMPT</div>
                  <svg className="absolute top-16 left-40 w-24 h-12 stroke-dark/30" viewBox="0 0 100 50"><path d="M0,25 Q50,-10 100,25" fill="none" strokeWidth="2" strokeDasharray="4 4" /></svg>
-                 <div className="absolute top-12 left-64 w-40 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-xl">MEMORY</div>
+                 <div className="absolute top-12 left-64 w-40 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-[24px]">MEMORY</div>
                  <svg className="absolute top-28 left-20 w-48 h-32 stroke-dark/30" viewBox="0 0 100 100"><path d="M0,0 Q50,100 100,50" fill="none" strokeWidth="2" strokeDasharray="4 4" /></svg>
-                 <div className="absolute bottom-12 left-12 w-32 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-xl">TOOL_1</div>
-                 <div className="absolute bottom-16 right-16 w-32 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-xl">OUTPUT</div>
+                 <div className="absolute bottom-12 left-12 w-32 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-[24px]">TOOL_1</div>
+                 <div className="absolute bottom-16 right-16 w-32 h-16 bg-gray-light border border-dark/20 flex items-center justify-center font-mono text-[24px]">OUTPUT</div>
                </div>
              </div>
            </div>
@@ -53,13 +53,13 @@ export default function DiagramSlide() {
                  </div>
 
                  <div className="flex flex-col justify-between h-[calc(100%-1rem)] w-48 z-10">
-                   <div className="w-full h-16 bg-white border-2 border-prussian flex items-center justify-center font-mono text-xl text-prussian font-bold shadow-sm">
+                   <div className="w-full h-16 bg-white border-2 border-prussian flex items-center justify-center font-mono text-[24px] text-prussian font-bold shadow-sm">
                      STATE
                    </div>
-                   <div className="w-full h-16 bg-white border-2 border-prussian flex items-center justify-center font-mono text-xl text-prussian font-bold shadow-sm">
+                   <div className="w-full h-16 bg-white border-2 border-prussian flex items-center justify-center font-mono text-[24px] text-prussian font-bold shadow-sm">
                      ROUTER
                    </div>
-                   <div className="w-full h-16 bg-white border-2 border-prussian flex items-center justify-center font-mono text-xl text-prussian font-bold shadow-sm">
+                   <div className="w-full h-16 bg-white border-2 border-prussian flex items-center justify-center font-mono text-[24px] text-prussian font-bold shadow-sm">
                      TOOLS
                    </div>
                  </div>

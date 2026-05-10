@@ -22,7 +22,7 @@ export default function TwoDemosSlide() {
            <div className="flex-1 bg-dark rounded-none shadow-[0_10px_30px_rgba(0,0,0,0.2)] border border-dark/10 flex flex-col overflow-hidden relative">
              <div className="h-10 w-full bg-[#2A2B2E] border-b border-black/50 flex items-center px-4 gap-4 shrink-0">
                 <div className="w-3 h-3 rounded-none bg-[#FF5F56] border border-[#E0443E]"></div>
-                <div className="font-mono text-xl text-white/40 tracking-widest uppercase">CONVENTIONAL_UI.APP</div>
+                <div className="font-mono text-[24px] text-white/40 tracking-widest uppercase">CONVENTIONAL_UI.APP</div>
              </div>
              <div className="flex-1 bg-[#1A1A1A] flex items-center justify-center p-8">
                 {/* Mock UI Elements */}
@@ -43,7 +43,7 @@ export default function TwoDemosSlide() {
            <div className="flex-1 bg-dark rounded-none shadow-[0_10px_30px_rgba(0,0,0,0.2)] border-2 border-prussian flex flex-col overflow-hidden relative">
              <div className="h-10 w-full bg-prussian border-b border-black/50 flex items-center px-4 gap-4 shrink-0">
                 <div className="w-3 h-3 rounded-none bg-white/90"></div>
-                <div className="font-mono text-xl text-white tracking-widest uppercase font-bold">AGENTIC_INTERFACE.APP</div>
+                <div className="font-mono text-[24px] text-white tracking-widest uppercase font-bold">AGENTIC_INTERFACE.APP</div>
              </div>
              <div className="flex-1 bg-[#111] flex items-center justify-center p-8">
                 {/* Mock Text/Dialogue Stream */}

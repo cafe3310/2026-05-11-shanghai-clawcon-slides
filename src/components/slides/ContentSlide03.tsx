@@ -8,7 +8,7 @@ export default function ContentSlide03() {
       <div className="w-full h-full pt-20 px-24 pb-16 flex relative z-0">
         
         {/* Top Right Label */}
-        <div className="absolute top-16 right-24 font-mono text-xl tracking-widest text-dark/50 uppercase">
+        <div className="absolute top-16 right-24 font-mono text-[24px] tracking-widest text-dark/50 uppercase">
           SYSTEM_SPECIFICATIONS.MD
         </div>
 
@@ -22,12 +22,12 @@ export default function ContentSlide03() {
                  <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
                  <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
                </div>
-               <div className="text-[#A0A0A0] text-xs font-sans tracking-wide">Gold Market Analyzer - v1.3.2</div>
+               <div className="text-[#A0A0A0] text-[24px] font-sans tracking-wide">Gold Market Analyzer - v1.3.2</div>
                <div className="w-12"></div> {/* Spacer for balance */}
             </div>
 
             {/* Terminal Content */}
-            <div className="flex-1 p-6 font-mono text-xs leading-relaxed text-[#27C93F] relative overflow-hidden flex flex-col bg-[#0A0A0A]">
+            <div className="flex-1 p-6 font-mono text-[24px] leading-relaxed text-[#27C93F] relative overflow-hidden flex flex-col bg-[#0A0A0A]">
               <div className="flex gap-8 h-full">
                 {/* Left Panel: Logs & Charts */}
                 <div className="flex-1 flex flex-col">
@@ -61,7 +61,7 @@ export default function ContentSlide03() {
                 {/* Right Panel: Data Matrix */}
                 <div className="w-[40%] border-l border-[#27C93F]/20 pl-4 flex flex-col gap-1 overflow-hidden opacity-50 relative">
                    {Array.from({length: 25}).map((_, i) => (
-                     <div key={i} className="flex justify-between text-[10px]">
+                     <div key={i} className="flex justify-between text-[24px]">
                        <span>{(2824.50 + Math.random() * 10 - 5).toFixed(2)}</span>
                        <span>{(Math.random() * 100).toFixed(1)}M</span>
                      </div>
@@ -130,7 +130,7 @@ export default function ContentSlide03() {
           </div>
 
           <div className="mt-auto mb-4">
-             <p className="font-sans text-xl text-dark/80 font-medium">
+             <p className="font-sans text-[24px] text-dark/80 font-medium">
                目标：在不烧光御三家 Token 的情况下，安全交付复杂任务。
              </p>
           </div>

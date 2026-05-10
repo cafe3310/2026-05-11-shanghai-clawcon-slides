@@ -10,7 +10,7 @@ export default function ContentSlide01() {
         
         {/* Left Column: Typography */}
         <div className="w-1/2 h-full flex flex-col px-24 relative z-10 pt-32 pb-24">
-          <div className="font-mono text-xl tracking-widest text-white/50 uppercase mb-16 border-b border-white/20 pb-6 self-start">
+          <div className="font-mono text-[24px] tracking-widest text-white/50 uppercase mb-16 border-b border-white/20 pb-6 self-start">
             SYSTEM: OPENCLAW_CUSTOM
           </div>
           
@@ -51,7 +51,7 @@ export default function ContentSlide01() {
             {/* Floating Terminal Input Point - Wireframe Style */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl bg-prussian/40 backdrop-blur-xl border border-white/40 p-10 shadow-[0_30px_60px_rgba(0,0,0,0.5)]">
               <div className="flex justify-between items-center mb-8">
-                <div className="font-mono text-lg text-white/50 tracking-widest font-semibold">TARGET_PROMPT</div>
+                <div className="font-mono text-[24px] text-white/50 tracking-widest font-semibold">TARGET_PROMPT</div>
                 <div className="flex gap-3">
                   <div className="w-3 h-3 border border-white/50"></div>
                   <div className="w-3 h-3 bg-white/80"></div>
@@ -63,11 +63,11 @@ export default function ContentSlide01() {
               </div>
               
               <div className="mt-12 flex justify-between items-center border-t border-white/20 pt-6">
-                <div className="font-mono text-lg text-white/40 flex items-center gap-2">
+                <div className="font-mono text-[24px] text-white/40 flex items-center gap-2">
                   <span className="w-2 h-2 bg-white/40 block animate-pulse"></span>
                   WAITING_FOR_INPUT
                 </div>
-                <button className="font-mono text-sm text-prussian tracking-widest bg-white px-6 py-3 hover:bg-white/90 transition-colors">
+                <button className="font-mono text-[24px] text-prussian tracking-widest bg-white px-6 py-3 hover:bg-white/90 transition-colors">
                   EXECUTE
                 </button>
               </div>
@@ -75,13 +75,13 @@ export default function ContentSlide01() {
 
             {/* Additional floating wireframe details */}
             <div className="absolute top-16 right-12 border border-white/30 p-5 bg-white/5 backdrop-blur-md">
-               <div className="font-mono text-xs text-white/50 mb-2">PROCESS_ID</div>
-               <div className="font-mono text-xl text-white">0xCAFEBABE</div>
+               <div className="font-mono text-[24px] text-white/50 mb-2">PROCESS_ID</div>
+               <div className="font-mono text-[24px] text-white">0xCAFEBABE</div>
             </div>
 
             <div className="absolute bottom-16 left-12 border-l border-b border-white/30 p-5 bg-white/5 backdrop-blur-md">
-               <div className="font-mono text-xs text-white/50 mb-2">DEVICE_TARGET</div>
-               <div className="font-mono text-xl text-white">NOKIA_3310</div>
+               <div className="font-mono text-[24px] text-white/50 mb-2">DEVICE_TARGET</div>
+               <div className="font-mono text-[24px] text-white">NOKIA_3310</div>
             </div>
 
           </div>

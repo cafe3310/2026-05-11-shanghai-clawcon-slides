@@ -24,7 +24,7 @@ export default function ContentSlide04() {
                 <div className="h-full bg-prussian w-[65%]"></div>
               </div>
             </div>
-            <div className="font-mono text-sm tracking-widest text-dark/60 uppercase pl-2">
+            <div className="font-mono text-[24px] tracking-widest text-dark/60 uppercase pl-2">
               <span className="text-prussian font-bold">[ PASS ]</span> External Architecture Harness
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function ContentSlide04() {
                 <div className="h-full bg-[#AA4444] w-[45%]"></div>
               </div>
             </div>
-            <div className="font-mono text-sm tracking-widest text-dark/60 uppercase pl-2">
+            <div className="font-mono text-[24px] tracking-widest text-dark/60 uppercase pl-2">
               <span className="text-[#AA4444] font-bold">[ FAIL ]</span> Prompt Harness Bypass
             </div>
           </div>
@@ -54,12 +54,12 @@ export default function ContentSlide04() {
         <div className="w-1/2 h-full flex flex-col justify-center pl-8">
           
           <div className="mb-12">
-            <div className="font-mono text-xl tracking-widest text-prussian uppercase mb-4 font-semibold">
+            <div className="font-mono text-[24px] tracking-widest text-prussian uppercase mb-4 font-semibold">
               01 / SAFE
             </div>
             <h2 className="font-display text-[4rem] leading-[1.1] tracking-tight text-dark mb-8">
               提示词防线 <br/>
-              <span className="text-dark/50">= 没防线</span>
+              <span className="text-dark/50">=没防线</span>
             </h2>
           </div>
 
@@ -68,7 +68,7 @@ export default function ContentSlide04() {
               任何基于 Prompt 的所谓 Harness 都并非完全靠谱。
             </p>
             
-            <p className="font-sans text-xl font-light text-dark/70 leading-relaxed pl-6">
+            <p className="font-sans text-[24px] font-light text-dark/70 leading-relaxed pl-6">
               基于提示词的防御（如<span className="font-mono bg-dark/5 px-2 py-0.5 rounded text-dark/80 mx-1">不要写 X</span>）极易被文件链接等机制绕过。在涉及资金或核心业务的任务面前，这种防御形同虚设。
             </p>
 
