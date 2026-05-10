@@ -1,13 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
+import { SlideContext } from '../App';
 
 interface SlideWrapperProps {
   children: React.ReactNode;
   backgroundColor?: string;
 }
 
-export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }: SlideWrapperProps) {
+export default function SlideWrapper({ children, backgroundColor = 'bg-ivory-light' }: SlideWrapperProps) {
   const outerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
+  const { currentIndex, totalSlides } = useContext(SlideContext);
 
   useEffect(() => {
     const updateScale = () => {
@@ -41,10 +43,13 @@ export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }:
     return () => observer.disconnect();
   }, []);
 
+  const pageNum = String(currentIndex + 1).padStart(2, '0');
+  const totalNum = String(totalSlides).padStart(2, '0');
+
   return (
     <div ref={outerRef} className="w-full h-full flex items-center justify-center overflow-hidden">
       <div 
-        className={`relative shadow-2xl overflow-hidden shrink-0 ${backgroundColor}`}
+        className={`relative shadow-2xl overflow-hidden shrink-0 slide-content-container ${backgroundColor}`}
         style={{
           width: '1920px',
           height: '1080px',
@@ -53,6 +58,11 @@ export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }:
         }}
       >
         {children}
+        
+        {/* Page Number Overlay */}
+        <div className="absolute bottom-12 right-12 font-mono text-xl text-slate-dark/30 select-none">
+          [PAGE {pageNum} / {totalNum}]
+        </div>
       </div>
     </div>
   );

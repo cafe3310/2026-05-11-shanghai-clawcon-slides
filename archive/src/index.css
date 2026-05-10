@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+
+  --color-ivory-light: #FDFCF8;
+  --color-ivory-medium: #F4F1EB;
+  --color-ivory-dark: #EAE6DF;
+  
+  --color-manilla: #F4F1EB;
+  --color-kraft: #D4A27F;
+  --color-terracotta: #D47A6A;
+  
+  --color-slate-light: #5A5856;
+  --color-slate-medium: #42403E;
+  --color-slate-dark: #2D2B2A;
+  
+  --color-sage: #8F9E8B;
+  --color-ochre: #D4A373;
+}
+
+body {
+  background-color: var(--color-ivory-light);
+  color: var(--color-slate-dark);
+  font-family: var(--font-sans);
+  overflow: hidden; /* Prevent scrolling for slide player */
+}
