@@ -36,6 +36,11 @@ const slides = [
   <LayoutGuideSlide key="layout" />
 ];
 
+export const SlideContext = React.createContext({
+  currentIndex: 0,
+  totalSlides: 0,
+});
+
 export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -61,58 +66,59 @@ export default function App() {
   }, [goToNext, goToPrev]);
 
   return (
-    <div className="relative w-full h-[100dvh] bg-dark overflow-hidden">
-      {/* Current Slide */}
-      <div className="absolute inset-0 transition-opacity duration-300">
-        {slides[currentIndex]}
-      </div>
-
-      {/* Navigation Overlay (Invisible click zones) */}
-      <div className="absolute inset-0 flex z-50 pointer-events-none">
-        <div 
-          className="w-1/4 h-full pointer-events-auto cursor-w-resize" 
-          onClick={goToPrev}
-          title="Previous Slide"
-        />
-        <div className="w-2/4 h-full" />
-        <div 
-          className="w-1/4 h-full pointer-events-auto cursor-e-resize" 
-          onClick={goToNext}
-          title="Next Slide"
-        />
-      </div>
-
-      {/* Minimal UI Controls */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-6 z-50 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <button 
-          onClick={goToPrev}
-          disabled={currentIndex === 0}
-          className="text-white disabled:opacity-30 hover:text-prussian transition-colors"
-        >
-          <ChevronLeft size={24} />
-        </button>
-        
-        <div className="flex gap-2">
-          {slides.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setCurrentIndex(idx)}
-              className={`w-2 h-2 rounded-full transition-all ${
-                idx === currentIndex ? 'bg-white scale-125' : 'bg-white/30 hover:bg-white/60'
-              }`}
-            />
-          ))}
+    <SlideContext.Provider value={{ currentIndex, totalSlides: slides.length }}>
+      <div className="relative w-full h-[100dvh] bg-dark overflow-hidden">
+        {/* Current Slide */}
+        <div className="absolute inset-0 transition-opacity duration-300">
+          {slides[currentIndex]}
         </div>
 
-        <button 
-          onClick={goToNext}
-          disabled={currentIndex === slides.length - 1}
-          className="text-white disabled:opacity-30 hover:text-prussian transition-colors"
-        >
-          <ChevronRight size={24} />
-        </button>
+        {/* Navigation Overlay (Invisible click zones) */}
+        <div className="absolute inset-0 flex z-50 pointer-events-none">
+          <div 
+            className="w-1/4 h-full pointer-events-auto cursor-w-resize" 
+            onClick={goToPrev}
+            title="Previous Slide"
+          />
+          <div className="w-2/4 h-full" />
+          <div 
+            className="w-1/4 h-full pointer-events-auto cursor-e-resize" 
+            onClick={goToNext}
+            title="Next Slide"
+          />
+        </div>
+
+        {/* Minimal UI Controls */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-6 z-50 bg-white/10 backdrop-blur-md px-6 py-3 rounded-full opacity-0 hover:opacity-100 transition-opacity duration-300">
+          <button 
+            onClick={goToPrev}
+            disabled={currentIndex === 0}
+            className="text-white disabled:opacity-30 hover:text-prussian transition-colors"
+          >
+            <ChevronLeft size={24} />
+          </button>
+          
+          <div className="flex gap-2">
+            {slides.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  idx === currentIndex ? 'bg-white scale-125' : 'bg-white/30 hover:bg-white/60'
+                }`}
+              />
+            ))}
+          </div>
+
+          <button 
+            onClick={goToNext}
+            disabled={currentIndex === slides.length - 1}
+            className="text-white disabled:opacity-30 hover:text-prussian transition-colors"
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
       </div>
-    </div>
+    </SlideContext.Provider>
   );
 }
-

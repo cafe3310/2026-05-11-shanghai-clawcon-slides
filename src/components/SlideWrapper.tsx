@@ -1,4 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useContext } from 'react';
+import { SlideContext } from '../App';
 
 interface SlideWrapperProps {
   children: React.ReactNode;
@@ -8,6 +9,7 @@ interface SlideWrapperProps {
 export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }: SlideWrapperProps) {
   const outerRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
+  const { currentIndex, totalSlides } = useContext(SlideContext);
 
   useEffect(() => {
     const updateScale = () => {
@@ -41,6 +43,8 @@ export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }:
     return () => observer.disconnect();
   }, []);
 
+  const pageNumber = `${String(currentIndex + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}`;
+
   return (
     <div ref={outerRef} className="w-full h-full flex items-center justify-center overflow-hidden">
       <div 
@@ -53,6 +57,11 @@ export default function SlideWrapper({ children, backgroundColor = 'bg-paper' }:
         }}
       >
         {children}
+        
+        {/* Page Number */}
+        <div className="absolute bottom-8 right-12 font-mono text-[24px] tracking-widest text-dark/30 z-50">
+          {pageNumber}
+        </div>
       </div>
     </div>
   );
