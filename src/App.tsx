@@ -27,9 +27,18 @@ export const SlideContext = createContext({
 });
 
 const slideSets = {
+  'openclaw-2026': {
+    title: 'ClawCon Shanghai',
+    description: '让 Claw 帮你安心摸鱼',
+    slides: [
+      <OpenClawTitle key="openclaw-title" />,
+      <div key="placeholder" className="w-full h-full flex items-center justify-center bg-slate-dark text-white text-4xl">More slides coming soon...</div>
+    ]
+  },
   'clawcon-2026': {
     title: '工作分享: 从 LLM Client 到 Agent',
     description: '给非技术人员的务实上手指南',
+    isArchived: true,
     slides: [
       <TitleSlide key="title" />,
       <TocSlide key="toc" />,
@@ -46,14 +55,6 @@ const slideSets = {
       <LayoutDesignSlide key="layout" />,
       <ClosingSlide key="closing" />
     ]
-  },
-  'openclaw-2026': {
-    title: 'ClawCon Shanghai',
-    description: '让 Claw 帮你安心摸鱼',
-    slides: [
-      <OpenClawTitle key="openclaw-title" />,
-      <div key="placeholder" className="w-full h-full flex items-center justify-center bg-slate-dark text-white text-4xl">More slides coming soon...</div>
-    ]
   }
 };
 
@@ -63,7 +64,7 @@ export default function App() {
   const [currentSetId, setCurrentSetId] = useState<PresentationId | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slides = currentSetId ? slideSets[currentSetId].slides : [];
+  const slides = currentSetId ? (slideSets[currentSetId] as any).slides : [];
 
   const goToNext = useCallback(() => {
     if (!currentSetId) return;
@@ -102,26 +103,38 @@ export default function App() {
       <div className="w-full h-[100dvh] bg-slate-dark flex flex-col items-center justify-center p-8">
         <h1 className="text-white text-5xl font-bold mb-16 tracking-tight">Select Presentation</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl">
-          {(Object.keys(slideSets) as PresentationId[]).map((id) => (
-            <button
-              key={id}
-              onClick={() => {
-                setCurrentSetId(id);
-                setCurrentIndex(0);
-              }}
-              className="group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-focus-blue/50 p-12 rounded-3xl text-left transition-all duration-300"
-            >
-              <div className="text-focus-blue mb-6 group-hover:scale-110 transition-transform">
-                <LayoutGrid size={48} />
-              </div>
-              <h2 className="text-white text-3xl font-bold mb-4">{slideSets[id].title}</h2>
-              <p className="text-white/40 text-lg leading-relaxed">{slideSets[id].description}</p>
-              <div className="mt-8 flex items-center text-focus-blue font-bold tracking-wide uppercase text-sm">
-                Open Presentation
-                <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </button>
-          ))}
+          {(Object.keys(slideSets) as PresentationId[]).map((id) => {
+            const set = slideSets[id] as any;
+            return (
+              <button
+                key={id}
+                onClick={() => {
+                  setCurrentSetId(id);
+                  setCurrentIndex(0);
+                }}
+                className={`group relative border rounded-3xl text-left transition-all duration-300 p-12 ${
+                  set.isArchived 
+                    ? 'bg-white/[0.02] border-white/5 opacity-50 grayscale-[0.5] hover:opacity-80 hover:grayscale-0' 
+                    : 'bg-white/5 border-white/10 hover:bg-white/10 hover:border-focus-blue/50'
+                }`}
+              >
+                {set.isArchived && (
+                  <div className="absolute top-6 right-6 bg-white/10 px-3 py-1 rounded-full text-[12px] text-white/40 font-bold tracking-widest uppercase">
+                    Archived
+                  </div>
+                )}
+                <div className={`${set.isArchived ? 'text-white/20' : 'text-focus-blue'} mb-6 group-hover:scale-110 transition-transform`}>
+                  <LayoutGrid size={48} />
+                </div>
+                <h2 className="text-white text-3xl font-bold mb-4">{set.title}</h2>
+                <p className="text-white/40 text-lg leading-relaxed">{set.description}</p>
+                <div className={`mt-8 flex items-center font-bold tracking-wide uppercase text-sm ${set.isArchived ? 'text-white/20' : 'text-focus-blue'}`}>
+                  Open Presentation
+                  <ChevronRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </button>
+            );
+          })}
         </div>
       </div>
     );
