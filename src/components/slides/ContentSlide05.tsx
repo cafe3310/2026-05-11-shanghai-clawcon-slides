@@ -58,7 +58,7 @@ export default function ContentSlide05() {
                 <span className="text-[24px] font-mono bg-white px-2 py-0.5 rounded-none border border-dark/5 text-dark/60">Skill Injections</span>
               </div>
               <div className="absolute -right-3 -top-3 text-white text-[24px] font-bold font-mono bg-prussian px-2 py-1 rounded-none border border-prussian/20 shadow-sm flex items-center gap-1 z-10">
-                <ShieldAlert size={12}/> 幻觉率增加
+                <ShieldAlert size={12}/> 幻觉增加 / Risk Up
               </div>
             </div>
 
@@ -90,21 +90,29 @@ export default function ContentSlide05() {
             <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">
               02 / SECURE
             </div>
-            <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-6">
+            <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-2">
               干活的上下文必须干净
             </h1>
+            <h2 className="font-display text-[32px] leading-tight text-dark/60 tracking-tight">
+              Clean Context for Real Work
+            </h2>
           </div>
 
           <div className="flex flex-col gap-8">
-            <p className="font-sans text-3xl font-normal text-dark/80 leading-relaxed">
-              「带人格的助手」做研究易受上下文污染。你肯定不希望模型因为「猜到你想买」就顺水推舟给你一个「真的建议买」的结论。
-              <br/><br/>
-              隔离人格与记忆干扰，才能在重要任务上输出可重复验证的结果。
+            <p className="font-sans text-3xl font-normal text-dark/80 leading-relaxed border-l-4 border-prussian/20 pl-6">
+              「带人格的助手」做研究易受上下文污染。你肯定不希望模型因为「猜到你想买」就顺水推舟给你一个「真的建议买」的结论。<br/>
+              <span className="text-dark/50 text-[24px] mt-2 block">Assistants with "personas" are prone to context contamination. You wouldn't want the model say "definitely buy" just because it guessed that's what you wanted to hear.</span>
+              <br/>
+              隔离人格与记忆干扰，才能在重要任务上输出可重复验证的结果。<br/>
+              <span className="text-dark/50 text-[24px] mt-2 block">Isolating persona and memory interference is the only way for verifiable results on critical tasks.</span>
             </p>
 
             <div className="mt-6 bg-prussian text-white p-10 rounded-none relative overflow-hidden">
               <p className="font-sans text-3xl font-medium leading-relaxed tracking-wide">
-                如果在某些场景下出货要求极高，务必 <span className="font-mono text-dark bg-white px-2 py-0.5 mix-blend-screen">手写 Subagent 工具</span>，绝对剥离主干上下文。
+                如果在某些场景下出货要求极高，务必 <span className="font-mono text-dark bg-white px-2 py-0.5 mix-blend-screen">手写 Subagent 工具</span>，绝对剥离主干上下文。<br/>
+                <span className="text-white/70 text-[24px] font-normal mt-4 block">
+                  Manually write Subagent tools instead of "delegating" to strictly decouple them from the main context.
+                </span>
               </p>
             </div>
           </div>

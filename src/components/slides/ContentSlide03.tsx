@@ -21,7 +21,8 @@ export default function ContentSlide03() {
           </div>
 
           <div className="mt-6 text-[24px] text-dark/60 font-mono text-left z-10 pl-2">
-            OpenClaw + DeepResearch Sub-agent + Ring-2.6-1T<br/>黄金投资与风险调研报告
+            OpenClaw + DeepResearch Sub-agent + Ring-2.6-1T<br/>
+            黄金投资与风险调研报告 <span className="text-dark/40">/ Gold Investment & Risk Analysis Report</span>
           </div>
 
           {/* Subtle Background Glow for Video */}
@@ -32,34 +33,49 @@ export default function ContentSlide03() {
         <div className="w-[45%] h-full flex flex-col justify-center pl-8">
 
           <div className="mb-10 w-full">
-            <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-6">
+            <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-2">
               在 Claw 中构建可信赖的 Agent
             </h1>
+            <h2 className="font-display text-[32px] leading-tight text-dark/60 tracking-tight">
+              Building Trustworthy Agents in Claw
+            </h2>
           </div>
 
           <div className="flex flex-col gap-10">
             {/* Item 01 */}
             <div>
               <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">01 / SAFE</div>
-              <h3 className="font-display text-4xl text-dark mb-3">Guardrail 必须在模型外头</h3>
+              <h3 className="font-display text-4xl text-dark mb-1">Guardrail 必须在模型外头</h3>
+              <p className="font-sans text-[28px] font-normal text-dark/60">
+                Guardrails Must Reside Outside the Model
+              </p>
             </div>
 
             {/* Item 02 */}
             <div>
               <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">02 / SECURE</div>
-              <h3 className="font-display text-4xl text-dark mb-3">严肃任务交给纯净 Subagent</h3>
+              <h3 className="font-display text-4xl text-dark mb-1">严肃任务交给纯净 Subagent</h3>
+              <p className="font-sans text-[28px] font-normal text-dark/60">
+                Delegate Critical Tasks to Pure Subagents
+              </p>
             </div>
 
             {/* Item 03 */}
             <div>
               <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">03 / TRUSTWORTHY</div>
-              <h3 className="font-display text-4xl text-dark mb-3">模型路由与幻觉抑制</h3>
+              <h3 className="font-display text-4xl text-dark mb-1">模型路由与幻觉抑制</h3>
+              <p className="font-sans text-[28px] font-normal text-dark/60">
+                Model Routing & Hallucination Suppression
+              </p>
             </div>
           </div>
 
-          <div className="mt-12 pt-6">
-             <p className="font-sans text-3xl text-dark/80 font-medium">
-               在不烧出天价 Token 的前题下交付复杂任务（可能也包括辅助投资）。让你有更多时间摸鱼。
+          <div className="mt-12 pt-6 border-t border-dark/10">
+             <p className="font-sans text-[28px] text-dark/80 font-medium leading-relaxed">
+               在不烧出天价 Token 的前题下交付复杂任务（可能也包括辅助投资）。让你有更多时间摸鱼。<br/>
+               <span className="text-dark/50 text-[24px] font-normal mt-2 block">
+                 Deliver complex tasks without burning through astronomical Token budgets (and maybe help with serious tasks).
+               </span>
              </p>
           </div>
         </div>

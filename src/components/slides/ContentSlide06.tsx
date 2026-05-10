@@ -42,7 +42,7 @@ export default function ContentSlide06() {
                       <DollarSign className="w-5 h-5 -mr-1"/><DollarSign className="w-5 h-5 -mr-1"/><DollarSign className="w-5 h-5"/>
                     </div>
                   </div>
-                  <div className="font-display text-[24px] text-dark mb-1">前台聊天与 UX</div>
+                  <div className="font-display text-[24px] text-dark mb-1">前台聊天与 UX <span className="text-[20px] text-dark/50 ml-1 font-sans font-normal">/ Front-end Chat & UX</span></div>
                   <div className="text-[24px] font-medium text-dark/50 mb-4 font-mono">Opus / Gemini Pro</div>
 
                   <div className="flex flex-wrap gap-2 text-[24px]">
@@ -63,7 +63,7 @@ export default function ContentSlide06() {
                       <DollarSign className="w-5 h-5"/>
                     </div>
                   </div>
-                  <div className="font-display text-[24px] text-dark mb-1">后台数据干活</div>
+                  <div className="font-display text-[24px] text-dark mb-1">后台数据干活 <span className="text-[20px] text-dark/50 ml-1 font-sans font-normal">/ Back-end Data Processing</span></div>
                   <div className="text-[24px] font-medium text-dark/50 mb-4 font-mono">DeepSeek, GLM, Ring, etc</div>
                   <div className="flex flex-wrap gap-2 text-[24px]">
                     <span className="px-2 py-1 bg-dark/5 text-dark/80 rounded-none border border-dark/10">Dry Logic</span>
@@ -82,29 +82,36 @@ export default function ContentSlide06() {
             <div className="font-mono text-[32px] font-bold text-prussian tracking-widest uppercase mb-2 select-none">
               03 / TRUSTWORTHY
             </div>
-            <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-6">
+            <h1 className="font-display text-[4rem] leading-tight tracking-tight text-dark mb-2">
               路由模型，控制幻觉，省钱
             </h1>
+            <h2 className="font-display text-[32px] leading-tight text-dark/60 tracking-tight">
+              Model Routing: Control Hallucinations, Save Money
+            </h2>
           </div>
 
           <div className="space-y-10 mt-6">
             <div className="flex items-start">
               <span className="text-prussian mr-4 mt-2 font-mono text-3xl opacity-80">✦</span>
               <div className="text-dark/80 leading-relaxed text-3xl font-normal">
-                <strong className="block text-dark font-medium tracking-wide mb-3 text-4xl font-display">
+                <strong className="block text-dark font-medium tracking-wide mb-2 text-4xl font-display">
                   「干活」任务的指数级用量
                 </strong>
-                复杂的报告任务容易产生指数用量而烧出天价。根据任务特性动态分配模型，是生产环境省钱的关键。
+                <span className="block text-dark/60 text-[28px] mb-3 leading-snug">"Work" Tasks Consume Exponential Tokens</span>
+                复杂的报告任务容易产生指数用量而烧出天价。根据任务特性动态分配模型，是生产环境省钱的关键。<br/>
+                <span className="text-dark/50 text-[24px] mt-2 block">Complex reporting tasks easily rack up astronomical API bills. Dynamically routing models based on task characteristics is key to saving money in production.</span>
               </div>
             </div>
 
             <div className="flex items-start">
               <span className="text-prussian mr-4 mt-2 font-mono text-3xl opacity-80">✦</span>
               <div className="text-dark/80 leading-relaxed text-3xl font-normal">
-                <strong className="block text-dark font-medium tracking-wide mb-3 text-4xl font-display">
+                <strong className="block text-dark font-medium tracking-wide mb-2 text-4xl font-display">
                   「聊天」与「工作」的不同需求
                 </strong>
-                闲聊模型需要情绪价值给够；涉及重要决策、大量上下文消耗的工作，最好切换至低成本低幻觉模型。
+                <span className="block text-dark/60 text-[28px] mb-3 leading-snug">Different Needs for "Chat" vs. "Work"</span>
+                闲聊模型需要情绪价值给够；涉及重要决策、大量上下文消耗的工作，最好切换至低成本低幻觉模型。<br/>
+                <span className="text-dark/50 text-[24px] mt-2 block">Chat models need to provide emotional value; for critical decisions or high-context work, switch to low-cost, low-hallucination models.</span>
               </div>
             </div>
           </div>
