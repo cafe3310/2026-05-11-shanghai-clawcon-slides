@@ -17,18 +17,18 @@ export default function FinalSlide() {
               </h1>
            </div>
 
-           <div className="grid grid-cols-12 gap-8 w-full">
+           <div className="grid grid-cols-12 gap-8 w-full relative">
               {/* Left Highlight Block */}
-              <div className="col-span-8 bg-white/40 backdrop-blur-xl rounded-xl p-12 flex flex-col justify-between border border-white/50 shadow-[0_20px_40px_rgba(0,0,0,0.05)] relative overflow-hidden">
+              <div className="col-span-8 bg-white/40 backdrop-blur-xl rounded-xl p-12 flex flex-col justify-between border border-white/50 shadow-[0_20px_40px_rgba(0,0,0,0.05)] relative overflow-hidden z-10">
                 <div className="font-mono text-[28px] text-dark/40 tracking-widest uppercase mb-8">
                   The Workhorse Model
                 </div>
-                <p className="font-sans text-[36px] font-light leading-relaxed mb-16 text-dark/90">
-                  如果你缺个低幻觉、干重活的主力模型，试试 <strong className="font-mono bg-dark/5 px-3 py-1 font-bold text-dark tracking-wide border border-dark/10">Ring-2.6-1T</strong>。<br/>主打 Token 效率与极低幻觉。
+                <p className="font-sans text-[36px] leading-relaxed mb-16 text-dark/90">
+                  如果你缺个低幻觉、干重活的主力模型，<br />试试 <strong className="font-mono bg-dark/5 px-3 py-1 font-bold text-dark tracking-wide border border-dark/10">Ring-2.6-1T</strong>。主打 Token 效率与极低幻觉。
                 </p>
                 <div className="flex items-center">
                   <span className="bg-prussian text-white px-4 py-2 font-sans font-medium text-[28px] tracking-wide inline-block">
-                    最近在 OpenRouter 免费
+                    Free On OpenRouter 最近限免
                   </span>
                 </div>
               </div>
