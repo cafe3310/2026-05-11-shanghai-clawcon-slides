@@ -1,6 +1,6 @@
 import React from 'react';
 import SlideWrapper from '../SlideWrapper';
-import demoVideo from '../../assets/videos/showcase-26-deep-research_03-visual.mp4';
+import demoVideo from '../../assets/videos/Ring-2.6-1T_Deep-Research_Showcase.mp4';
 
 export default function ContentSlide03() {
   return (
