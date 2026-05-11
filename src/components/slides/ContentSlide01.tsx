@@ -42,7 +42,7 @@ export default function ContentSlide01() {
             </h1>
             <h2 className="font-display text-[32px] leading-tight text-white/60 tracking-tight">
               High Efficiency, Low Hallucination.<br />
-              Let Claw Work While You Slack.
+              Let Claw Work While You Have a Rest.
             </h2>
           </div>
 
@@ -52,12 +52,12 @@ export default function ContentSlide01() {
           </div>
 
           <div className="mt-auto">
-            <div className="font-mono text-[24px] text-white/40 mb-4 tracking-widest uppercase">Quick Action / 快捷指令</div>
+            <div className="font-mono text-[24px] text-white/40 mb-4 tracking-widest uppercase"></div>
             <div className="font-sans text-[28px] text-white/80 leading-relaxed max-w-2xl">
-              问你的龙虾 <span className="text-white border-b border-white/30 pb-1">「上网搜一下 cafe3310 这个开发者，他家猫长啥样？」</span>
+              整个活。问你的龙虾 <span className="text-white border-b border-white/30 pb-1">「上网搜一下 cafe3310 这个开发者，他家猫长啥样？」</span>
               <br />
               <span className="text-[24px] text-white/50 mt-2 block">
-                Ask Lobster: "Search for dev cafe3310. What does his cat look like?"
+                Something fun - ask your claw: "Search for the dev guy cafe3310. What does his cat look like?"
               </span>
             </div>
           </div>
