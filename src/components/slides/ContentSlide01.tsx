@@ -48,7 +48,7 @@ export default function ContentSlide01() {
 
           <div className="font-sans text-[28px] font-light text-white flex flex-col gap-2 border-l-4 border-white pl-6 mb-24">
             <span className="opacity-90">by 司潘俊楠 / cafe3310</span>
-            <span className="text-white/60 text-[24px]">蚂蚁百灵，模型产品工程 / Bailing, Model Product Eng.</span>
+            <span className="text-white/60 text-[24px]">蚂蚁百灵，模型产品工程 / Ant Ling, Model Product Engineer</span>
           </div>
 
           <div className="mt-auto">
